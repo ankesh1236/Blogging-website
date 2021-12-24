@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,700;1,400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.a1{
+    height: 100vh;
+    background: url('images/LIB1.jpg');
+    background-position: center;
+    background-size: cover;
+    opacity: 0.7;
+}
+
+
+.a1 .new1 nav{
+    background: transparent;
+    height: 50px;
+    width: 100%;
+    
+}
+
+.a1 .new1 label.logo{
+    color: white;
+    font-size: 20px;
+    line-height: 60px;
+    padding: 0 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.a1 .new1 .lapz .lapiz, .new2{
+    display: flex;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 60px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff8c;
+}
+
+.new1 nav .butt1{
+    padding-left: 10px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    color: black;
+    padding:0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #807f7f;
+    cursor: pointer;
+} 
+
+.a1 .new1 .lapz{
+    justify-content: space-between;
+    display: flex;
+}
+
+.new4{
+    padding-right: 10px;
+}
+
+.bull{
+    padding-left: 10px;
+    background: transparent;
+    border-radius: 50%;
+    color: white;
+    padding:0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #807f7f;
+    cursor: pointer;
+}
+
+.dipp{
+    display: none;
+}
+/*-------------------------------------------Search box------------------------------------------*/
+
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background: #fff;
+    max-width: 80%;
+    width: 1000px;
+    max-height: 80%;
+    min-height: 70%;
+}
+
+.modal.active{
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.modal_header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.modal_header .close-button{
+    cursor: pointer;
+    border:none;
+    outline:none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-body{
+    padding: 10px 15px;
+}
+
+#overlay{
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    pointer-events: none;
+
+}
+
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+/*-------------------------------------------------------dropdown------------------------------------------*/
+.dropbtn {
+    background-color: transparent;
+    color: #ffffff8c;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .dropdown,.dipp {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+  }
+
+  .dc{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 220px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dipp{
+      padding-left: 10px;
+  }
+  
+  .dropdown-content a, .dc a {
+    line-height: 40px;
+    color: black;
+    margin-left: 5px;
+    text-decoration: none;
+    display: flex ;
+    flex-direction: column ;
+  }
+  
+  .dropdown-content a:hover, .dc a:hover {
+    border-radius: 8px;  
+    background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content , .dipp:hover .dc {
+    display: block;
+  }
+  
+  
+.a1 .ab1{
+	margin-left: 60px; 
+	margin-top: 180px;
+}
+
+  .tag{
+	justify-content: center;
+	color: white;
+	align-content: center;
+}
+
+
+  
+.tag .ab1 .t1{
+	font-family: 'Ubuntu',sans-serif;
+	font-weight: 500;
+	font-size: 70px;
+}
+
+.tag .ab1 .t2{
+	font-family: 'Ubuntu',sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.tag .ab1 button{
+	text-align: center;
+	justify-content: center;
+	margin-left: 10px; 
+	padding: 4px 18px;
+	border-radius: 15px;
+	background: transparent;
+	border: #fff 2px solid;
+	color: #fff;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tag .ab1 button:hover{
+	color: black;
+	background: white;
+	transition: 0.3s ease;
+}
+
+
+/*-----------------------------------------------------responsive Media----------------------------------------*/
+
+@media(max-width: 1000px){
+
+    .dipp{
+        display: block;
+    }
+
+    .new3{
+        display: none;
+    }
+}
